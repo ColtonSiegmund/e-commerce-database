@@ -4,6 +4,7 @@ const sequelize = require('../config/connection');
 
 class ProductTag extends Model {}
 
+// Creating our Product Tag table with an ID, Product_id that references our Product model, and Tag_id that references our Tag model.
 ProductTag.init(
   {
     id: {
